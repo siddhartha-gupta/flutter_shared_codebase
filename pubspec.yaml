@@ -10,9 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^0.5.8
-  localstorage: ^3.0.2+5
-  lzstring: ^1.0.2+1
+  # shared_preferences: ^0.5.8
+  # localstorage: ^3.0.2+5
+  # lzstring: ^1.0.2+1
 
 dev_dependencies:
   flutter_test:
