@@ -1,4 +1,4 @@
-/* import 'package:localstorage/localstorage.dart';
+import 'package:localstorage/localstorage.dart';
 import 'package:lzstring/lzstring.dart';
 
 class LocalStorageService {
@@ -24,4 +24,3 @@ class LocalStorageService {
     await storage.deleteItem(key);
   }
 }
- */

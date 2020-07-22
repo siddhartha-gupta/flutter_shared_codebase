@@ -1,4 +1,4 @@
-/* import 'package:shared_preferences/shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesService {
   static SharedPreferences prefs;
@@ -25,4 +25,3 @@ class SharedPreferencesService {
     return SharedPreferencesService.prefs.getInt(key);
   }
 }
- */
