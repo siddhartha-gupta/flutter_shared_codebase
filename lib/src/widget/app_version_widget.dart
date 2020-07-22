@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:meta/meta.dart';
 import 'package:package_info/package_info.dart';
 
 class AppVersionWidget extends StatefulWidget {
-  AppVersionWidget({Key key, this.title}) : super(key: key);
-
-  final String title;
+  AppVersionWidget({
+    Key key,
+  }) : super(key: key);
 
   @override
   _AppVersionWidgetState createState() => _AppVersionWidgetState();

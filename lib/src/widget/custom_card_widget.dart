@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meta/meta.dart';
 
 class SettingsCardWidget extends StatelessWidget {
   SettingsCardWidget({

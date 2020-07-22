@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:meta/meta.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AboutAppWidget extends StatelessWidget {
-  final String playStoreMoreAppsUrl;
-  final String authorName;
-
   AboutAppWidget({
     Key key,
-    this.playStoreMoreAppsUrl,
-    this.authorName,
+    @required this.playStoreMoreAppsUrl,
+    @required this.authorName,
   }) : super(key: key);
+
+  final String playStoreMoreAppsUrl;
+  final String authorName;
 
   void openPlaystore() {
     launch(playStoreMoreAppsUrl);

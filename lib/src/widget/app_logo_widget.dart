@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:meta/meta.dart';
 
 class AppLogoWidget extends StatelessWidget {
   final String appIcon;
 
   AppLogoWidget({
     Key key,
-    this.appIcon,
+    @required this.appIcon,
   }) : super(key: key);
 
   @override
