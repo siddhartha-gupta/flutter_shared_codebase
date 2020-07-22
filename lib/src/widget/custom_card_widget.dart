@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
 
-class SettingsCardWidget extends StatelessWidget {
-  SettingsCardWidget({
+class CustomCardWidget extends StatelessWidget {
+  CustomCardWidget({
     Key key,
     @required this.child,
     @required this.padding,
