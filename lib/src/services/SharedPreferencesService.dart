@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class SharedPreferencesService {
   static SharedPreferences prefs;
 
-  static Future<void> initialize() async {
+  static Future<void> isReady() async {
     SharedPreferencesService.prefs = await SharedPreferences.getInstance();
 
     return Future<bool>.value(true);
