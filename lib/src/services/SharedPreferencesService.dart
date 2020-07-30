@@ -24,4 +24,8 @@ class SharedPreferencesService {
   static int getInteger(String key) {
     return SharedPreferencesService.prefs.getInt(key);
   }
+
+  static void deleteItem(key) async {
+    await SharedPreferencesService.prefs.remove(key);
+  }
 }
