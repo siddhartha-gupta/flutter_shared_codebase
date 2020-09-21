@@ -11,3 +11,4 @@ export './src/widget/loading_indicator_widget.dart';
 export './src/services/SharedPreferencesService.dart';
 export './src/services/LocalStorageService.dart';
 export './src/services/NetworkService.dart';
+export './src/services/UtilsService.dart';
