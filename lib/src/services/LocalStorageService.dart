@@ -8,7 +8,7 @@ class LocalStorageService {
     return storage.ready;
   }
 
-  static void setItem(String key, String value) async {
+  static Future<void> setItem(String key, String value) async {
     String val = await LZString.compress(value);
 
     storage.setItem(key, val);
@@ -20,7 +20,7 @@ class LocalStorageService {
     return item != null ? await LZString.decompress(item) : Future.value(null);
   }
 
-  static void deleteItem(key) async {
+  static Future<void> deleteItem(key) async {
     await storage.deleteItem(key);
   }
 }
