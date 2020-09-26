@@ -2,9 +2,11 @@ import 'package:localstorage/localstorage.dart';
 import 'package:lzstring/lzstring.dart';
 
 class LocalStorageService {
-  static final LocalStorage storage = new LocalStorage('dynamic_puzzle');
+  static LocalStorage storage = new LocalStorage('dynamic_puzzle');
 
-  static Future<void> isReady() {
+  static Future<void> initialize(String storageName) {
+    storage = new LocalStorage(storageName);
+
     return storage.ready;
   }
 
