@@ -7,10 +7,10 @@ class ThemeSwitchWidget extends StatefulWidget {
   ThemeSwitchWidget({Key key, this.value, this.onChanged}) : super(key: key);
 
   @override
-  _ThemeSwitchWidgetState createState() => _ThemeSwitchWidgetState();
+  ThemeSwitchWidgetState createState() => ThemeSwitchWidgetState();
 }
 
-class _ThemeSwitchWidgetState extends State<ThemeSwitchWidget>
+class ThemeSwitchWidgetState extends State<ThemeSwitchWidget>
     with SingleTickerProviderStateMixin {
   AnimationController _animationController;
   Animation _circleAnimation;

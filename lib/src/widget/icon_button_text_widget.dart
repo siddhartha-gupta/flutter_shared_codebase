@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class IconButtonText extends StatelessWidget {
-  IconButtonText({
+class IconButtonTextWidget extends StatelessWidget {
+  IconButtonTextWidget({
     @required this.onClick,
     @required this.iconData,
     @required this.text,
