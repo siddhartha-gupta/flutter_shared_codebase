@@ -10,7 +10,7 @@ class LocalStorageService {
     return storage.ready;
   }
 
-  static Future<String> getItem(key) async {
+  static Future<dynamic> getItem(key) async {
     var item = storage.getItem(key);
 
     return item != null ? await LZString.decompress(item) : Future.value(null);
