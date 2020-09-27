@@ -10,16 +10,16 @@ class LocalStorageService {
     return storage.ready;
   }
 
-  static Future<void> setItem(String key, String value) async {
-    String val = await LZString.compress(value);
-
-    storage.setItem(key, val);
-  }
-
-  static Future<String> getItem(String key) async {
+  static Future<String> getItem(key) async {
     var item = storage.getItem(key);
 
     return item != null ? await LZString.decompress(item) : Future.value(null);
+  }
+
+  static Future<void> setItem(key, value) async {
+    String val = await LZString.compress(value);
+
+    storage.setItem(key, val);
   }
 
   static Future<void> deleteItem(key) async {
