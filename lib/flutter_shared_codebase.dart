@@ -10,7 +10,6 @@ export './src/widget/header_wrapper_widget.dart';
 export './src/widget/icon_button_text_widget.dart';
 export './src/widget/loading_indicator_widget.dart';
 export './src/widget/page_wrapper_widget.dart';
-export './src/widget/theme_switch_widget.dart';
 
 export './src/services/SharedPreferencesService.dart';
 export './src/services/LocalStorageService.dart';
