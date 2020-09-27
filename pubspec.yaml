@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^0.5.8
+  shared_preferences: ^0.5.12
   localstorage: ^3.0.2+5
   lzstring: ^1.0.2+1
   url_launcher: ^5.4.5
