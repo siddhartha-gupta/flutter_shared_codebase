@@ -9,6 +9,10 @@ class SharedPreferencesService {
     return Future<bool>.value(true);
   }
 
+  static void setMockValue() {
+    SharedPreferences.setMockInitialValues({});
+  }
+
   static void setString(String key, String value) {
     SharedPreferencesService.prefs.setString(key, value);
   }
