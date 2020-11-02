@@ -1,6 +1,6 @@
 name: flutter_shared_codebase
 description: Shared codebase to be used across different apps
-version: 0.0.1
+version: 0.0.2
 author:
 homepage:
 
@@ -10,13 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^0.5.8
-  localstorage: ^3.0.2+5
+  shared_preferences: ^0.5.12+2
+  localstorage: ^3.0.3+6
   lzstring: ^1.0.2+1
-  url_launcher: ^5.4.5
+  url_launcher: ^5.7.8
   outline_material_icons: ^0.1.1
-  package_info: ^0.4.0+17
-  connectivity: ^0.4.8+2
+  package_info: ^0.4.3
+  connectivity: ^2.0.0
 
 dev_dependencies:
   flutter_test:
