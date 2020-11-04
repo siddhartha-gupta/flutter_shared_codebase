@@ -16,3 +16,5 @@ export './src/services/LocalStorageService.dart';
 export './src/services/NetworkService.dart';
 export './src/services/SharedPreferencesService.dart';
 export './src/services/UtilsService.dart';
+
+export './src/choice.dart';
