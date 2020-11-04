@@ -22,21 +22,22 @@ class HeaderWrapperWidget extends StatelessWidget {
     choice.callback();
   }
 
-  Widget navigationIcon() {
-    return leftIcon != null
-        ? GestureDetector(
-            onTap: () {
-              leftIconCallback();
-            },
-            child: new Padding(
-              padding: EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
-              child: new Icon(leftIcon),
-            ),
-          )
-        : new Container();
+  Widget navigationIconWidget() {
+    if (leftIcon == null) {
+      return new Container();
+    }
+    return new GestureDetector(
+      onTap: () {
+        leftIconCallback();
+      },
+      child: new Padding(
+        padding: EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
+        child: new Icon(leftIcon),
+      ),
+    );
   }
 
-  Widget headerText() {
+  Widget headerTextWidget() {
     return new Text(
       text,
       overflow: TextOverflow.ellipsis,
@@ -131,9 +132,9 @@ class HeaderWrapperWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              navigationIcon(),
+              navigationIconWidget(),
               new Expanded(
-                child: headerText(),
+                child: headerTextWidget(),
               ),
               actionButtonWidgets(),
             ],

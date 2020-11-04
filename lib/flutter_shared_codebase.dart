@@ -7,6 +7,7 @@ export './src/widget/confirmation_widget.dart';
 export './src/widget/custom_card_widget.dart';
 export './src/widget/error_message_widget.dart';
 export './src/widget/header_wrapper_widget.dart';
+export './src/widget/header_search_wrapper_widget.dart';
 export './src/widget/icon_button_text_widget.dart';
 export './src/widget/loading_indicator_widget.dart';
 export './src/widget/page_wrapper_widget.dart';
