@@ -59,7 +59,7 @@ class HeaderWrapperWidget extends StatelessWidget {
           entry.value();
         },
         child: new Padding(
-          padding: EdgeInsets.fromLTRB(15.0, 0, 15.0, 0),
+          padding: EdgeInsets.fromLTRB(12.0, 0, 12.0, 0),
           child: Icon(
             entry.key,
           ),
